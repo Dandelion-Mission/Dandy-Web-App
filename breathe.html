@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Dandelion Mission</title>
+</head>
+
+<body>
+    <div>
+        <div class="background">
+            <section id="up"></section>
+            <section id="down"></section>
+            <section id="left"></section>
+            <section id="right"></section>
+        </div>
+        
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+
+        <a href="emotion.html" class="centered"><button> Next </button></a>
+
+        <div class="breathe-container">
+            <h1> Let's Breathe With Me</h1>
+            <img src="images/dandyBreathe.png" class="breathe">
+            <div id="breathText">
+                <h2>Breathe In</h2>
+            </div>
+        </div>
+
+       
+    </div>
+
+   
+
+    <script>
+        const breathText = document.getElementById('breathText');
+        const intervals = [
+            { text: "Breathe In", duration: 4000 },
+            { text: "Hold", duration: 9000 },
+            { text: "Breathe Out", duration: 7000 }
+        ];
+
+        let currentIndex = 0;
+        let loopCount = 0;
+
+        function changeText() {
+            if (loopCount < 3) { // Stop after 3 loops
+                breathText.textContent = intervals[currentIndex].text;
+                setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % intervals.length;
+
+                    if (currentIndex === 0) {
+                        loopCount++;
+                    }
+                    changeText();
+                }, intervals[currentIndex].duration);
+
+            } else {
+                breathText.textContent = "Done"; // Final message after 3 loops
+            }
+        }
+
+        changeText();
+
+    </script>
+</body>
+
+</html>

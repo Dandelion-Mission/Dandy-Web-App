@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dandelion Mission</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div> 
+        <div class="background">
+            <section id="up"></section>
+            <section id="down"></section>
+            <section id="left"></section>
+            <section id="right"></section>
+        </div>
+
+        <div class="logo">
+            <img src="images/logo.png" alt="Dandelion Mission Logo">
+        </div>
+        
+        <h3 class="response" id="responseText"></h3>
+        <img class="dandy_response" id="Dandy" src="" alt="Dandy">
+
+    </div>
+
+    <script>
+        const responses = {
+            angry: [
+                "You are not alone. Tell me how you feel.",
+                "It’s okay to feel this way. Be kind to yourself.",
+                "I'm sorry you feel this way. Take a pause."
+            ],
+            sad: [
+                "You are not alone. Tell me how you feel.",
+                "It’s okay to feel this way. Be kind to yourself.",
+                "I'm sorry you feel this way. Take a pause."
+            ],
+            anxious: [
+                "You are not alone. Tell me how you feel.",
+                "It’s okay to feel this way. Be kind to yourself.",
+                "I'm sorry you feel this way. Take a pause."
+            ],
+            happy: [
+                "You’ve come so far! Acknowledge your achievements.",
+                "Enjoy the calm. Be fully present in this peaceful moment.",
+                "Take time to reflect on what you’re thankful for today."
+            ]
+        };
+
+        const selectedEmotion = localStorage.getItem("selectedEmotion");
+        document.getElementById("Dandy").src = `Dandy/response dandy ${selectedEmotion}.png`;
+        const randomResponse = responses[selectedEmotion][Math.floor(Math.random() * responses[selectedEmotion].length)];
+        document.getElementById("responseText").textContent = randomResponse;
+
+        setTimeout(() => {
+            window.location.href = "journal.html";
+        }, 4000);
+
+        document.addEventListener('click', function() {
+            window.location.href = 'journal.html'; // Change this to your target HTML file
+        });
+    </script>
+</body>
+
+</html>
