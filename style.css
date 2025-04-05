@@ -1,9 +1,9 @@
-@font-face{
+@font-face {
     font-family: 'Alpha';
     src: url(fonts/Alphakind.otf);
 }
 
-body{
+body {
     position: relative;
     margin: 0;
     padding: 0;
@@ -14,50 +14,50 @@ body{
     font-family: 'poppins';
 }
 
-.background{
+.background {
     position: absolute;
     z-index: 500;
     width: 100%;
     height: 100%;
 }
 
-.content{
+.content {
     position: relative;
     display: flex;
     flex-direction: column;
     z-index: 900;
 }
 
-.centered{
+.centered {
     position: absolute;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 100%; 
+    width: 100%;
     z-index: 1000;
     margin-top: 155%;
 }
 
-.breathe-container{
+.breathe-container {
     position: relative;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center;    
+    justify-content: center;
+    align-items: center;
     z-index: 999;
 }
 
-.breathe-container h1{
+.breathe-container h1 {
     margin-bottom: 30%;
 }
 
-.breathe-container img{
+.breathe-container img {
     position: relative;
     margin-bottom: 20%;
 }
 
-.textContent{
+.textContent {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -67,14 +67,14 @@ body{
 h1 {
     font-family: 'Alpha';
     color: #FFF5D1;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     font-size: 56px;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 12%;
 }
 
-h2{
+h2 {
     color: #FFF5D1;
     font-size: 24px;
 }
@@ -82,7 +82,8 @@ h2{
 h3 {
     font-family: 'Alpha';
     color: #FFF5D1;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);; 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    ;
     font-size: 30px;
     margin: 0;
     margin-bottom: 2%;
@@ -95,21 +96,21 @@ p {
     color: #1B475D;
 }
 
-.logo{
+.logo {
     position: relative;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 999;
 }
 
-.logo img{
+.logo img {
     position: relative;
     width: 20%;
     margin-top: 10%;
 }
 
-.MainPage{
+.MainPage {
     position: absolute;
     right: 0;
     width: 90%;
@@ -121,13 +122,13 @@ a {
     text-decoration: none;
 }
 
-#breathText{
+#breathText {
     color: #FFF5D1;
     font-size: 24px;
     margin-top: 5%;
 }
 
-.bottom{
+.bottom {
     position: absolute;
     width: 100%;
     z-index: 900;
@@ -147,7 +148,7 @@ button {
     z-index: 999;
 }
 
-#up{
+#up {
     position: absolute;
     height: 300px;
     width: 300px;
@@ -157,7 +158,7 @@ button {
     animation: down 30s infinite;
 }
 
-#down{
+#down {
     position: absolute;
     right: 0;
     height: 400px;
@@ -168,44 +169,44 @@ button {
     animation: up 30s infinite;
 }
 
-#left{
+#left {
     position: absolute;
     right: 0;
     height: 150px;
     width: 150px;
     border-radius: 10%;
-    background-image: linear-gradient(80deg, red,#DD4426 );
+    background-image: linear-gradient(80deg, red, #DD4426);
     filter: blur(60px);
     animation: left 30s infinite;
 }
 
-#right{
+#right {
     position: absolute;
     height: 200px;
     width: 200px;
     border-radius: 10%;
-    background-image: linear-gradient(80deg, orange, #FAD564); 
+    background-image: linear-gradient(80deg, orange, #FAD564);
     filter: blur(60px);
     animation: right 30s infinite;
 }
 
 .breathe {
-    width: 20%; 
-    animation: breatheAnimation 19s forwards; 
+    width: 20%;
+    animation: breatheAnimation 19s forwards;
     animation-iteration-count: 3;
 }
 
-#textDisplay{
+#textDisplay {
     margin-bottom: 5%;
 }
 
 .dandy-wrapper {
-    display: flex; 
+    display: flex;
     justify-content: center;
-    z-index: 10; 
+    z-index: 10;
 }
 
-.dandy-wrapper img{
+.dandy-wrapper img {
     width: 30%;
     margin-bottom: 5%;
 }
@@ -219,10 +220,10 @@ button {
 
 .container {
     position: relative;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     background: rgba(255, 243, 218, 0.3);
     padding: 20px;
     border-radius: 15px;
@@ -235,10 +236,10 @@ button {
 
 .container2 {
     position: relative;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     background: rgba(255, 243, 218, 0.3);
     padding: 20px;
     border-radius: 15px;
@@ -249,7 +250,7 @@ button {
     z-index: 999;
 }
 
-#emotion{
+#emotion {
     margin-bottom: 10%;
 }
 
@@ -276,12 +277,12 @@ select {
     color: grey;
 }
 
-.response{
+.response {
     position: relative;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 30% 20%;
     z-index: 900;
@@ -323,12 +324,12 @@ textarea {
     z-index: 900;
 }
 
-.closingText{
+.closingText {
     position: relative;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center;    
+    justify-content: center;
+    align-items: center;
     z-index: 999;
     background: rgba(255, 243, 218, 0.6);
     padding: 20px;
@@ -340,41 +341,46 @@ textarea {
 }
 
 
-#quote{
+#quote {
     font-size: large;
 }
 
 @keyframes down {
-    0%, 100% {
-        top: 10%; /* Start at the top */
+    0%,
+    100% {
+        top: 10%;
     }
     50% {
-        top: 80%; /* Move to the middle of the viewport */
+        top: 80%;
     }
 }
 
 @keyframes up {
-    0%, 100% {
-        bottom: 0%; /* Start at the bottom */
+    0%,
+    100% {
+        bottom: 0%;
     }
     50% {
-        bottom: 50%; /* Move to the middle of the viewport */
+        bottom: 50%;
     }
 }
 
 @keyframes left {
-    0%, 100% {
-        left: 0%; /* Start at the left */
+    0%,
+    100% {
+        left: 0%;
     }
     50% {
-        left: 50%; /* Move to the middle of the viewport */
+        left: 50%;
     }
 }
 
 @keyframes right {
-    0%, 100% {
-        right: 0%; /* Start at the right */
-        bottom: 40%; /* Start at the bottom */
+
+    0%,
+    100% {
+        right: 0%;
+        bottom: 40%;
     }
     50% {
         right: 10%;
@@ -384,25 +390,67 @@ textarea {
 
 @keyframes breatheAnimation {
     0% {
-        transform: scale(1); /* Original size */
+        transform: scale(1);
     }
+
     21.05% {
-        transform: scale(3); /* 3s times bigger (4 seconds) */
+        transform: scale(3);
     }
+
     68.42% {
-        transform: scale(3); /* Hold size for 7 seconds */
+        transform: scale(3);
     }
+
     100% {
-        transform: scale(1); /* Back to original size (8 seconds) */
+        transform: scale(1);
     }
 }
 
-@media(max-height: 700px) {
+@media(max-height: 800px) {
     .container {
         margin-top: 20%;
     }
 
-    .container2{
+    .container2 {
         margin-top: 10%;
     }
+
+    .centered {
+        margin-top: 130%;
+    }
+
+    #breathText {
+        font-size: 18px;
+    }
+
+    .breathe-container h1{
+        margin-bottom: 15%;
+    }
+
+    .breathe-container img{
+        margin-bottom: 10%;
+    }
+
+    .container2{
+        margin-top: 20%;
+    }
+
+    @keyframes breatheAnimation {
+        0% {
+            transform: scale(1);
+        }
+
+        21.05% {
+            transform: scale(2);
+        }
+
+        68.42% {
+            transform: scale(2);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
 }
