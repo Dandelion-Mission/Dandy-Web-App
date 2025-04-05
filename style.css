@@ -1,0 +1,479 @@
+@font-face {
+    font-family: 'Alpha';
+    src: url(fonts/Alphakind.otf);
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1B475D;
+    overflow: hidden;
+    font-family: 'poppins';
+}
+
+.background {
+    position: absolute;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 900;
+}
+
+.centered {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 155%;
+}
+
+.breathe-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.breathe-container h1 {
+    margin-bottom: 30%;
+}
+
+.breathe-container img {
+    position: relative;
+    margin-bottom: 20%;
+}
+
+.textContent {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+
+h1 {
+    font-family: 'Alpha';
+    color: #FFF5D1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    font-size: 56px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 12%;
+}
+
+h2 {
+    color: #FFF5D1;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: 'Alpha';
+    color: #FFF5D1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    ;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+p {
+    text-align: center;
+    margin-top: 0px;
+    width: 70%;
+    color: #1B475D;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.logo img {
+    position: relative;
+    width: 20%;
+    margin-top: 10%;
+}
+
+.MainPage {
+    position: absolute;
+    right: 0;
+    width: 90%;
+    /* float: right; */
+    margin-top: 30%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#breathText {
+    color: #FFF5D1;
+    font-size: 24px;
+    margin-top: 5%;
+}
+
+.bottom {
+    position: absolute;
+    width: 100%;
+    z-index: 900;
+    bottom: 0;
+}
+
+button {
+    font-size: 21px;
+    background-color: #96BC61;
+    color: black;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: none;
+    z-index: 999;
+}
+
+#up {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-image: linear-gradient(120deg, #DD4426, orange);
+    filter: blur(60px);
+    animation: down 30s infinite;
+}
+
+#down {
+    position: absolute;
+    right: 0;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, #96BC61, #FAD564);
+    filter: blur(60px);
+    animation: up 30s infinite;
+}
+
+#left {
+    position: absolute;
+    right: 0;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+    background-image: linear-gradient(80deg, red, #DD4426);
+    filter: blur(60px);
+    animation: left 30s infinite;
+}
+
+#right {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+    background-image: linear-gradient(80deg, orange, #FAD564);
+    filter: blur(60px);
+    animation: right 30s infinite;
+}
+
+.breathe {
+    width: 20%;
+    animation: breatheAnimation 19s forwards;
+    animation-iteration-count: 3;
+}
+
+#textDisplay {
+    margin-bottom: 5%;
+}
+
+.dandy-wrapper {
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.dandy-wrapper img {
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+.dandy_response {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 243, 218, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: 5%;
+    margin-top: 40%;
+    z-index: 9999;
+}
+
+.container2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 243, 218, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: 5%;
+    margin-top: 30%;
+    z-index: 999;
+}
+
+#emotion {
+    margin-bottom: 10%;
+}
+
+textarea {
+    font-size: 16px;
+    margin: 10px;
+    width: 90%;
+}
+
+select {
+    font-size: 16px;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FAD564;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #1B475D;
+    font-family: "Poppins", sans-serif;
+}
+
+.disabled {
+    color: grey;
+}
+
+.response {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30% 20%;
+    z-index: 900;
+    font-size: 36px;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 243, 218, 0.6);
+    height: 200px;
+    resize: none;
+    font-family: "Poppins", sans-serif;
+    color: #1B475D;
+    font-size: 16px;
+    margin: 10px;
+    width: 90%;
+
+}
+
+.dandy_response {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    z-index: 900;
+}
+
+.quote-box {
+    position: relative;
+    background: rgba(255, 243, 218, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: #1B475D;
+    align-items: center;
+    justify-content: center;
+    margin: 20% 5%;
+    z-index: 900;
+}
+
+.closingText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background: rgba(255, 243, 218, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: #1B475D;
+    font-size: large;
+    transform: translateX(12%);
+    margin-top: 30%;
+}
+
+
+#quote {
+    font-size: large;
+}
+
+@keyframes down {
+
+    0%,
+    100% {
+        top: 10%;
+        /* Start at the top */
+    }
+
+    50% {
+        top: 80%;
+        /* Move to the middle of the viewport */
+    }
+}
+
+@keyframes up {
+
+    0%,
+    100% {
+        bottom: 0%;
+        /* Start at the bottom */
+    }
+
+    50% {
+        bottom: 50%;
+        /* Move to the middle of the viewport */
+    }
+}
+
+@keyframes left {
+
+    0%,
+    100% {
+        left: 0%;
+        /* Start at the left */
+    }
+
+    50% {
+        left: 50%;
+        /* Move to the middle of the viewport */
+    }
+}
+
+@keyframes right {
+
+    0%,
+    100% {
+        right: 0%;
+        /* Start at the right */
+        bottom: 40%;
+        /* Start at the bottom */
+    }
+
+    50% {
+        right: 10%;
+        bottom: 40%;
+    }
+}
+
+@keyframes breatheAnimation {
+    0% {
+        transform: scale(1);
+        /* Original size */
+    }
+
+    21.05% {
+        transform: scale(3);
+        /* 3s times bigger (4 seconds) */
+    }
+
+    68.42% {
+        transform: scale(3);
+        /* Hold size for 7 seconds */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Back to original size (8 seconds) */
+    }
+}
+
+@media(max-height: 800px) {
+    .container {
+        margin-top: 20%;
+    }
+
+    .container2 {
+        margin-top: 10%;
+    }
+
+    .centered {
+        margin-top: 130%;
+    }
+
+    #breathText {
+        font-size: 18px;
+    }
+
+    .breathe-container h1{
+        margin-bottom: 15%;
+    }
+
+    .breathe-container img{
+        margin-bottom: 10%;
+    }
+
+    .container2{
+        margin-top: 20%;
+    }
+
+    @keyframes breatheAnimation {
+        0% {
+            transform: scale(1);
+            /* Original size */
+        }
+
+        21.05% {
+            transform: scale(2);
+            /* 3s times bigger (4 seconds) */
+        }
+
+        68.42% {
+            transform: scale(2);
+            /* Hold size for 7 seconds */
+        }
+
+        100% {
+            transform: scale(1);
+            /* Back to original size (8 seconds) */
+        }
+    }
+
+}
